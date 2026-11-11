@@ -1,0 +1,12 @@
+Academic Records Indexer - lookup benchmark (clock() from <time.h>, 1000 random keys per round)
+
+        N | height |  build ms |   BST us/lkp      cmp | Linear us/lkp        cmp | Binary us/lkp      cmp | speed-up
+----------+--------+-----------+-----------------------+--------------------------+------------------------+---------
+     1000 |     27 |       0.0 |        0.015     11.4 |         0.113      486.8 |         0.020      9.0 |       8x
+    10000 |     32 |       1.0 |        0.033     16.9 |         1.092     4965.5 |         0.033     12.4 |      33x
+   100000 |     41 |      14.0 |        0.058     21.2 |        10.792    49059.5 |         0.053     15.7 |     186x
+  1000000 |     47 |     514.0 |        0.121     25.7 |       114.333   504168.0 |         0.079     19.0 |     943x
+
+Worst case - 10000 keys inserted in SORTED order: height = 10000 (a linked list), avg 5052.7 comparisons, 15.813 us per lookup  -> O(N); fix = AVL / Red-Black tree
+
+results written to benchmark_results.csv

@@ -1,0 +1,275 @@
+  loaded 25 records from data/students.csv (0 duplicates skipped, 0 malformed lines)
+
+==================== ACADEMIC RECORDS INDEXER (BST) ====================
+ 1. Insert student record        5. Print class marksheet (in-order)
+ 2. Search by roll number        6. Tree statistics / shape
+ 3. Update marks                 7. Load records from CSV
+ 4. Delete record                8. Save records to CSV
+ 0. Exit (free all memory)
+------------------------------------------------------------------------
+ choice: 6
+  records      : 25
+  tree height  : 5  (balanced minimum would be 5)
+  root         : 2026166020 (Karthik Raman)
+  smallest roll: 2026166001 (Abdul Rahman)   largest roll: 2026166040 (Yuvraj Singh)
+  worst-case comparisons for a lookup = height = 5  (linear scan would need up to 25)
+
+  Tree shape (pre-order, indentation = depth):
+    2026166020 (Karthik Raman)
+        2026166008 (Priya Lakshmi)
+            2026166003 (Anjali Nair)
+                2026166001 (Abdul Rahman)
+                    2026166002 (Ajay Menon)
+                2026166005 (Fathima Begum)
+                    2026166007 (Keerthana M)
+            2026166014 (Meenakshi Sundaram)
+                2026166011 (Divya Bharathi)
+                    2026166012 (Nithya Shree)
+                2026166017 (Sneha Iyer)
+                    2026166016 (Bharath Raj)
+                    2026166019 (Pooja Reddy)
+        2026166031 (Aravind Selvam)
+            2026166026 (Rahul Verma)
+                2026166023 (Gokul Krishnan)
+                    2026166024 (Ramya Krishnan)
+                2026166028 (Deeptanshu Kumar)
+                    2026166030 (Suresh Pandian)
+            2026166037 (Vignesh Kumar)
+                2026166035 (Harish Babu)
+                    2026166033 (Manoj Prabhu)
+                2026166039 (Lavanya Devi)
+                    2026166038 (Swathi Mohan)
+                    2026166040 (Yuvraj Singh)
+
+==================== ACADEMIC RECORDS INDEXER (BST) ====================
+ 1. Insert student record        5. Print class marksheet (in-order)
+ 2. Search by roll number        6. Tree statistics / shape
+ 3. Update marks                 7. Load records from CSV
+ 4. Delete record                8. Save records to CSV
+ 0. Exit (free all memory)
+------------------------------------------------------------------------
+ choice: 5
+
+  CLASS MARKSHEET - in-order traversal, ascending roll number (25 records)
++------------+----------------------+------+------+------+-------+-------+-------+-----+------+
+| Roll No    | Name                 | CIA1 | CIA2 | EndS | Int40 | Ext60 | Total | Grd | Flag |
++------------+----------------------+------+------+------+-------+-------+-------+-----+------+
+| 2026166001 | Abdul Rahman         |   37 |   39 |   66 |  30.4 |  39.6 |  70.0 | B+  | E-   |
+| 2026166002 | Ajay Menon           |   35 |   33 |   69 |  27.2 |  41.4 |  68.6 | B+  | E-   |
+| 2026166003 | Anjali Nair          |   47 |   49 |   93 |  38.4 |  55.8 |  94.2 | O   | E-   |
+| 2026166005 | Fathima Begum        |   41 |   44 |   79 |  34.0 |  47.4 |  81.4 | A+  | E-   |
+| 2026166007 | Keerthana M          |   46 |   48 |   91 |  37.6 |  54.6 |  92.2 | O   | E-   |
+| 2026166008 | Priya Lakshmi        |   45 |   47 |   88 |  36.8 |  52.8 |  89.6 | A+  | E-   |
+| 2026166011 | Divya Bharathi       |   40 |   38 |   70 |  31.2 |  42.0 |  73.2 | A   | E-   |
+| 2026166012 | Nithya Shree         |   43 |   45 |   84 |  35.2 |  50.4 |  85.6 | A+  | E-   |
+| 2026166014 | Meenakshi Sundaram   |   42 |   40 |   81 |  32.8 |  48.6 |  81.4 | A+  | E-   |
+| 2026166016 | Bharath Raj          |   31 |   29 |   57 |  24.0 |  34.2 |  58.2 | B   | E-   |
+| 2026166017 | Sneha Iyer           |   36 |   34 |   58 |  28.0 |  34.8 |  62.8 | B+  | E-   |
+| 2026166019 | Pooja Reddy          |   39 |   42 |   75 |  32.4 |  45.0 |  77.4 | A   | E-   |
+| 2026166020 | Karthik Raman        |   38 |   41 |   72 |  31.6 |  43.2 |  74.8 | A   | E-   |
+| 2026166023 | Gokul Krishnan       |   30 |   28 |   52 |  23.2 |  31.2 |  54.4 | B   | E-   |
+| 2026166024 | Ramya Krishnan       |   34 |   37 |   63 |  28.4 |  37.8 |  66.2 | B+  | E-   |
+| 2026166026 | Rahul Verma          |   15 |   18 |   40 |  13.2 |  24.0 |  37.2 | U   | -A   |
+| 2026166028 | Deeptanshu Kumar     |   44 |   46 |   86 |  36.0 |  51.6 |  87.6 | A+  | E-   |
+| 2026166030 | Suresh Pandian       |   26 |   31 |   44 |  22.8 |  26.4 |  49.2 | U   | EA   |
+| 2026166031 | Aravind Selvam       |   29 |   33 |   55 |  24.8 |  33.0 |  57.8 | B   | E-   |
+| 2026166033 | Manoj Prabhu         |   12 |   16 |   35 |  11.2 |  21.0 |  32.2 | U   | -A   |
+| 2026166035 | Harish Babu          |   22 |   25 |   48 |  18.8 |  28.8 |  47.6 | U   | EA   |
+| 2026166037 | Vignesh Kumar        |   33 |   36 |   61 |  27.6 |  36.6 |  64.2 | B+  | E-   |
+| 2026166038 | Swathi Mohan         |   42 |   43 |   77 |  34.0 |  46.2 |  80.2 | A   | E-   |
+| 2026166039 | Lavanya Devi         |   48 |   46 |   90 |  37.6 |  54.0 |  91.6 | O   | E-   |
+| 2026166040 | Yuvraj Singh         |   40 |   41 |   74 |  32.4 |  44.4 |  76.8 | A   | E-   |
++------------+----------------------+------+------+------+-------+-------+-------+-----+------+
+  Flag: E = eligible for end-sem (internal >= 40%), A = arrear (total < 50 or not eligible)
+
+==================== ACADEMIC RECORDS INDEXER (BST) ====================
+ 1. Insert student record        5. Print class marksheet (in-order)
+ 2. Search by roll number        6. Tree statistics / shape
+ 3. Update marks                 7. Load records from CSV
+ 4. Delete record                8. Save records to CSV
+ 0. Exit (free all memory)
+------------------------------------------------------------------------
+ choice: 2
+  Roll number to find: 2026166028
++------------+----------------------+------+------+------+-------+-------+-------+-----+------+
+| Roll No    | Name                 | CIA1 | CIA2 | EndS | Int40 | Ext60 | Total | Grd | Flag |
++------------+----------------------+------+------+------+-------+-------+-------+-----+------+
+| 2026166028 | Deeptanshu Kumar     |   44 |   46 |   86 |  36.0 |  51.6 |  87.6 | A+  | E-   |
++------------+----------------------+------+------+------+-------+-------+-------+-----+------+
+  Flag: E = eligible for end-sem (internal >= 40%), A = arrear (total < 50 or not eligible)
+  found in 4 comparisons out of 25 records
+
+==================== ACADEMIC RECORDS INDEXER (BST) ====================
+ 1. Insert student record        5. Print class marksheet (in-order)
+ 2. Search by roll number        6. Tree statistics / shape
+ 3. Update marks                 7. Load records from CSV
+ 4. Delete record                8. Save records to CSV
+ 0. Exit (free all memory)
+------------------------------------------------------------------------
+ choice: 2
+  Roll number to find: 2026166099
+  not found (5 comparisons, tree holds 25 records)
+
+==================== ACADEMIC RECORDS INDEXER (BST) ====================
+ 1. Insert student record        5. Print class marksheet (in-order)
+ 2. Search by roll number        6. Tree statistics / shape
+ 3. Update marks                 7. Load records from CSV
+ 4. Delete record                8. Save records to CSV
+ 0. Exit (free all memory)
+------------------------------------------------------------------------
+ choice: 1
+  Roll number      : 2026166028
+  ! roll 2026166028 already exists - duplicate rejected
+
+==================== ACADEMIC RECORDS INDEXER (BST) ====================
+ 1. Insert student record        5. Print class marksheet (in-order)
+ 2. Search by roll number        6. Tree statistics / shape
+ 3. Update marks                 7. Load records from CSV
+ 4. Delete record                8. Save records to CSV
+ 0. Exit (free all memory)
+------------------------------------------------------------------------
+ choice: 1
+  Roll number      : 2026166010
+  Name             : Ishwarya Venkat
+  CIA 1 (0-50)     : 44
+  CIA 2 (0-50)     : 43
+  End-sem (0-100)  : 82
+  inserted 2026166010 (Ishwarya Venkat): total 84.0, grade A+, eligible=1, arrears=0
+
+==================== ACADEMIC RECORDS INDEXER (BST) ====================
+ 1. Insert student record        5. Print class marksheet (in-order)
+ 2. Search by roll number        6. Tree statistics / shape
+ 3. Update marks                 7. Load records from CSV
+ 4. Delete record                8. Save records to CSV
+ 0. Exit (free all memory)
+------------------------------------------------------------------------
+ choice: 3
+  Roll number to update: 2026166026
+  current: CIA1 15  CIA2 18  End-sem 40  (total 37.2, grade U)
+  new CIA 1 (0-50)    : 30
+  new CIA 2 (0-50)    : 32
+  new End-sem (0-100) : 55
+  updated: total 57.8, grade B, eligible=1, arrears=0
+
+==================== ACADEMIC RECORDS INDEXER (BST) ====================
+ 1. Insert student record        5. Print class marksheet (in-order)
+ 2. Search by roll number        6. Tree statistics / shape
+ 3. Update marks                 7. Load records from CSV
+ 4. Delete record                8. Save records to CSV
+ 0. Exit (free all memory)
+------------------------------------------------------------------------
+ choice: 4
+  Roll number to delete: 2026166033
+  deleted 2026166033 (node had 0 children); tree now holds 25 records, height 5
+
+==================== ACADEMIC RECORDS INDEXER (BST) ====================
+ 1. Insert student record        5. Print class marksheet (in-order)
+ 2. Search by roll number        6. Tree statistics / shape
+ 3. Update marks                 7. Load records from CSV
+ 4. Delete record                8. Save records to CSV
+ 0. Exit (free all memory)
+------------------------------------------------------------------------
+ choice: 4
+  Roll number to delete: 2026166020
+  deleted 2026166020 (node had 2 children); tree now holds 24 records, height 5
+
+==================== ACADEMIC RECORDS INDEXER (BST) ====================
+ 1. Insert student record        5. Print class marksheet (in-order)
+ 2. Search by roll number        6. Tree statistics / shape
+ 3. Update marks                 7. Load records from CSV
+ 4. Delete record                8. Save records to CSV
+ 0. Exit (free all memory)
+------------------------------------------------------------------------
+ choice: 6
+  records      : 24
+  tree height  : 5  (balanced minimum would be 5)
+  root         : 2026166023 (Gokul Krishnan)
+  smallest roll: 2026166001 (Abdul Rahman)   largest roll: 2026166040 (Yuvraj Singh)
+  worst-case comparisons for a lookup = height = 5  (linear scan would need up to 24)
+
+  Tree shape (pre-order, indentation = depth):
+    2026166023 (Gokul Krishnan)
+        2026166008 (Priya Lakshmi)
+            2026166003 (Anjali Nair)
+                2026166001 (Abdul Rahman)
+                    2026166002 (Ajay Menon)
+                2026166005 (Fathima Begum)
+                    2026166007 (Keerthana M)
+            2026166014 (Meenakshi Sundaram)
+                2026166011 (Divya Bharathi)
+                    2026166010 (Ishwarya Venkat)
+                    2026166012 (Nithya Shree)
+                2026166017 (Sneha Iyer)
+                    2026166016 (Bharath Raj)
+                    2026166019 (Pooja Reddy)
+        2026166031 (Aravind Selvam)
+            2026166026 (Rahul Verma)
+                2026166024 (Ramya Krishnan)
+                2026166028 (Deeptanshu Kumar)
+                    2026166030 (Suresh Pandian)
+            2026166037 (Vignesh Kumar)
+                2026166035 (Harish Babu)
+                2026166039 (Lavanya Devi)
+                    2026166038 (Swathi Mohan)
+                    2026166040 (Yuvraj Singh)
+
+==================== ACADEMIC RECORDS INDEXER (BST) ====================
+ 1. Insert student record        5. Print class marksheet (in-order)
+ 2. Search by roll number        6. Tree statistics / shape
+ 3. Update marks                 7. Load records from CSV
+ 4. Delete record                8. Save records to CSV
+ 0. Exit (free all memory)
+------------------------------------------------------------------------
+ choice: 5
+
+  CLASS MARKSHEET - in-order traversal, ascending roll number (24 records)
++------------+----------------------+------+------+------+-------+-------+-------+-----+------+
+| Roll No    | Name                 | CIA1 | CIA2 | EndS | Int40 | Ext60 | Total | Grd | Flag |
++------------+----------------------+------+------+------+-------+-------+-------+-----+------+
+| 2026166001 | Abdul Rahman         |   37 |   39 |   66 |  30.4 |  39.6 |  70.0 | B+  | E-   |
+| 2026166002 | Ajay Menon           |   35 |   33 |   69 |  27.2 |  41.4 |  68.6 | B+  | E-   |
+| 2026166003 | Anjali Nair          |   47 |   49 |   93 |  38.4 |  55.8 |  94.2 | O   | E-   |
+| 2026166005 | Fathima Begum        |   41 |   44 |   79 |  34.0 |  47.4 |  81.4 | A+  | E-   |
+| 2026166007 | Keerthana M          |   46 |   48 |   91 |  37.6 |  54.6 |  92.2 | O   | E-   |
+| 2026166008 | Priya Lakshmi        |   45 |   47 |   88 |  36.8 |  52.8 |  89.6 | A+  | E-   |
+| 2026166010 | Ishwarya Venkat      |   44 |   43 |   82 |  34.8 |  49.2 |  84.0 | A+  | E-   |
+| 2026166011 | Divya Bharathi       |   40 |   38 |   70 |  31.2 |  42.0 |  73.2 | A   | E-   |
+| 2026166012 | Nithya Shree         |   43 |   45 |   84 |  35.2 |  50.4 |  85.6 | A+  | E-   |
+| 2026166014 | Meenakshi Sundaram   |   42 |   40 |   81 |  32.8 |  48.6 |  81.4 | A+  | E-   |
+| 2026166016 | Bharath Raj          |   31 |   29 |   57 |  24.0 |  34.2 |  58.2 | B   | E-   |
+| 2026166017 | Sneha Iyer           |   36 |   34 |   58 |  28.0 |  34.8 |  62.8 | B+  | E-   |
+| 2026166019 | Pooja Reddy          |   39 |   42 |   75 |  32.4 |  45.0 |  77.4 | A   | E-   |
+| 2026166023 | Gokul Krishnan       |   30 |   28 |   52 |  23.2 |  31.2 |  54.4 | B   | E-   |
+| 2026166024 | Ramya Krishnan       |   34 |   37 |   63 |  28.4 |  37.8 |  66.2 | B+  | E-   |
+| 2026166026 | Rahul Verma          |   30 |   32 |   55 |  24.8 |  33.0 |  57.8 | B   | E-   |
+| 2026166028 | Deeptanshu Kumar     |   44 |   46 |   86 |  36.0 |  51.6 |  87.6 | A+  | E-   |
+| 2026166030 | Suresh Pandian       |   26 |   31 |   44 |  22.8 |  26.4 |  49.2 | U   | EA   |
+| 2026166031 | Aravind Selvam       |   29 |   33 |   55 |  24.8 |  33.0 |  57.8 | B   | E-   |
+| 2026166035 | Harish Babu          |   22 |   25 |   48 |  18.8 |  28.8 |  47.6 | U   | EA   |
+| 2026166037 | Vignesh Kumar        |   33 |   36 |   61 |  27.6 |  36.6 |  64.2 | B+  | E-   |
+| 2026166038 | Swathi Mohan         |   42 |   43 |   77 |  34.0 |  46.2 |  80.2 | A   | E-   |
+| 2026166039 | Lavanya Devi         |   48 |   46 |   90 |  37.6 |  54.0 |  91.6 | O   | E-   |
+| 2026166040 | Yuvraj Singh         |   40 |   41 |   74 |  32.4 |  44.4 |  76.8 | A   | E-   |
++------------+----------------------+------+------+------+-------+-------+-------+-----+------+
+  Flag: E = eligible for end-sem (internal >= 40%), A = arrear (total < 50 or not eligible)
+
+==================== ACADEMIC RECORDS INDEXER (BST) ====================
+ 1. Insert student record        5. Print class marksheet (in-order)
+ 2. Search by roll number        6. Tree statistics / shape
+ 3. Update marks                 7. Load records from CSV
+ 4. Delete record                8. Save records to CSV
+ 0. Exit (free all memory)
+------------------------------------------------------------------------
+ choice: 8
+  CSV path: results/students_sorted_out.csv
+  saved 24 records to results/students_sorted_out.csv (in ascending roll order)
+
+==================== ACADEMIC RECORDS INDEXER (BST) ====================
+ 1. Insert student record        5. Print class marksheet (in-order)
+ 2. Search by roll number        6. Tree statistics / shape
+ 3. Update marks                 7. Load records from CSV
+ 4. Delete record                8. Save records to CSV
+ 0. Exit (free all memory)
+------------------------------------------------------------------------
+ choice: 0
+  freed 24 nodes - all memory released. Goodbye.
